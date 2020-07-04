@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>HoangDev</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://hoangdev.cf/"/>
+  <updated>2020-07-04T23:10:35.816Z</updated>
+  <id>https://hoangdev.cf/</id>
+  
+  <author>
+    <name>Hoangdevelopers</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Privacy, security and deception</title>
+    <link href="https://hoangdev.cf/2020/07/05/Privacy/"/>
+    <id>https://hoangdev.cf/2020/07/05/Privacy/</id>
+    <published>2020-07-04T23:06:11.868Z</published>
+    <updated>2020-07-04T23:10:35.816Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Privacy-security-and-deception"><a href="#Privacy-security-and-deception" class="headerlink" title="Privacy, security and deception"></a>Privacy, security and deception</h2><p>We’re committed to protecting user privacy and providing a safe and secure environment for our users. Apps that are deceptive, malicious, or intended to abuse or misuse any network, device or personal data are strictly prohibited.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Privacy-security-and-deception&quot;&gt;&lt;a href=&quot;#Privacy-security-and-deception&quot; class=&quot;headerlink&quot; title=&quot;Privacy, security and deception&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Series JS để gió cuốn đi - JSDoc là gì? (Phần 1)</title>
+    <link href="https://hoangdev.cf/2017/09/25/Series-JS-de-gio-cuon-di-JSDoc-la-gi-Phan-1/"/>
+    <id>https://hoangdev.cf/2017/09/25/Series-JS-de-gio-cuon-di-JSDoc-la-gi-Phan-1/</id>
+    <published>2017-09-24T17:56:26.000Z</published>
+    <updated>2020-07-04T23:06:11.867Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2017/09/25/Series-JS-de-gio-cuon-di-JSDoc-la-gi-Phan-1/thumbnail.png"><blockquote><p>JSDoc là một ngôn ngữ đánh dấu dùng để chú thích tập tin mã nguồn JavaScript. Sử dụng chú thích JSDoc, lập trình viên có thể thêm tài liệu mô tả các application programming interface cho code của họ đang viết ra. Sau đó được xử lý, bởi các công cụ khác nhau, để tạo ra các tài liệu trong các định dạng tiếp cận như HTML và Rich Text Format.<br>@wikipedia:en.wikipedia.org/wiki/JSDoc</p></blockquote><a id="more"></a><p>Tại sao cần JSDoc?</p><p>Với JSDoc bạn chỉ cần thêm 1 plugin để generate tài liệu ra 1 trang web. Vậy là bạn đã có 1 trang Document cho code của mình rồi ^^!.<br>Minh họa 1 chút nha:<br><div class="video-container"><iframe src="//www.youtube.com/embed/vIclAOi3Hc0" frameborder="0" allowfullscreen></iframe></div><br>à mình đùa chút thôi thực ra thì… Sống trên đời…<br><img src="/2017/09/25/Series-JS-de-gio-cuon-di-JSDoc-la-gi-Phan-1/songtren1dongtien.jpg"><br>Thêm chú thích cho JavaScript</p><p>Thông thường JSDoc comment nên được đặt ở phía trước code của bạn. Nó phải bắt đầu bằng chuỗi /<strong><em> để được định dạng như 1 cú pháp JSDoc. Phần chú thích bắt dầu bằng /</em>, /*</strong> hoặc nhiều hơn 3 dấu * sẽ bị bỏ qua.</p><p>Một đoạn chú thích đơn giản sẽ trông như dưới đây:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/** This is a description of the foo function. */</span><br><span class="line">function foo() &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Bạn có thể gửi thêm thông tin như tác giả, mô tả..vv bằng các thẻ đặc biệt.<br>Trong ví dụ dưới dây, nếu function là một hàm khởi tạo (constructor).</p><p>Sử dụng thẻ mô tả code:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Represents a book.</span><br><span class="line"> * @constructor</span><br><span class="line"> */</span><br><span class="line">function Book(title, author) &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Có nhiều thẻ để bạn thể hiện thêm các thông tin khác nhau. Đọc bài Series JSDoc3 - Danh sách các thẻ được sử dụng trong JSDoc3 (phần 2) để tìm hiểu.</p><p>Ví dụ bổ xung thêm thông tin với các thẻ:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Represents a book.</span><br><span class="line"> * @constructor</span><br><span class="line"> * @param &#123;string&#125; title - The title of the book.</span><br><span class="line"> * @param &#123;string&#125; author - The author of the book.</span><br><span class="line"> */</span><br><span class="line">function Book(title, author) &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Generate tài liệu</p><p>Bạn có thể sử dụng công cụ JSDoc3 Tool để tạo ta trang web HTML chứa tài liệu comment,<br>Mặc định JSDoc sẽ sử dụng template default để trả về trong code HTML, bạn có thể edit hoặc tạo mới template nếu cần.<br>Chạy dòng lệnh cmd để generate tài liệu:</p><p>./jsdoc book.js</p><p>Nguồn:: <a href="http://usejsdoc.org/about-getting-started.html" target="_blank" rel="noopener">http://usejsdoc.org/about-getting-started.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2017/09/25/Series-JS-de-gio-cuon-di-JSDoc-la-gi-Phan-1/thumbnail.png&quot;&gt;
+&lt;blockquote&gt;&lt;p&gt;JSDoc là một ngôn ngữ đánh dấu dùng để chú thích tập tin mã nguồn JavaScript. Sử dụng chú thích JSDoc, lập trình viên có thể thêm tài liệu mô tả các application programming interface cho code của họ đang viết ra. Sau đó được xử lý, bởi các công cụ khác nhau, để tạo ra các tài liệu trong các định dạng tiếp cận như HTML và Rich Text Format.&lt;br&gt;@wikipedia:en.wikipedia.org/wiki/JSDoc&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://hoangdev.cf/categories/JavaScript/"/>
+    
+    
+      <category term="JSDoc3" scheme="https://hoangdev.cf/tags/JSDoc3/"/>
+    
+      <category term="JSDoc" scheme="https://hoangdev.cf/tags/JSDoc/"/>
+    
+      <category term="JavaScript" scheme="https://hoangdev.cf/tags/JavaScript/"/>
+    
+  </entry>
+  
+</feed>
